@@ -44,11 +44,11 @@
         </div>
         <div class="one-third column value">
           <h3 class="opinion-section-title">{{ custom_category_title }}</h3>
-          {% for post in site.posts %}
-          {% if post.categories contains custom_category %}
           <p class="opinions-intro">
           {{ custom_category_subtitle }}
           </p>
+          {% for post in site.posts %}
+          {% if post.categories contains custom_category %}
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
           <h4 class="opinion-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
           <h5 class="opinion-date">{{ post.date | date: date_format }}</h5>

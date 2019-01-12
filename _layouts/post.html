@@ -1,0 +1,44 @@
+{% include header.html title=post.title %}
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="section small-hero">
+    <div class="container">
+      <div class="row imf">
+        <div class="one-half-column">
+            <h1><a href="/"><span class="blog">blog.</span>{{ site.top_name }}</a></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section small-banner imf">
+    <div class="container">
+        <div class="row">
+          <div class="one-half column">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="color-overlay">
+  <div class="section posts imf">
+    <div class="container">
+      <div class="row">
+        <div class="ten columns value">
+        <h4 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <h5 class="post-date">{{ post.date | date: date_format }}</h5>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  {% include footer.html %}
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

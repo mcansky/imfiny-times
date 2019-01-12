@@ -1,0 +1,99 @@
+.imf {
+    font-family: 'Playfair Display';
+}
+
+.hero {
+    margin-top: 1rem;
+}
+
+.small-hero h1 a {
+    font-size: 18pt;
+    text-decoration: none;
+    color: #000;
+}
+
+.blog {
+    font-style: italic;
+    font-size: 18pt;
+    margin-right: 2rem;
+    color: #BBB;
+}
+
+.banner {
+    margin-top: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 1px solid #333;
+    background: #333;
+    color: #EEE;
+    padding-left: 2rem;
+}
+
+.small-banner {
+    margin-top: 2rem;
+}
+
+.posts {
+    padding-top: 3rem;
+    border-top: 1px solid #333;
+}
+
+.posts h4.post-title, .posts h4.opinion-title {
+    font-size: 18pt;
+}
+
+.posts h5.post-date, .posts h5.opinion-date {
+    font-style: italic;
+    font-weight: none;
+    font-size: 12pt;
+    margin-top: -2.5rem;
+    text-align: left;
+    width: 100%;
+    color: #555;
+}
+
+.posts a {
+    color: #000;
+    text-decoration: none;
+}
+
+.posts a:hover {
+    color: #999;
+}
+
+.posts p.post-link {
+    text-align: right;
+    margin-top: -2rem;
+}
+.posts p.post-link a {
+    font-style: italic;
+    font-size: 10pt;
+    color: #000;
+}
+.posts p.post-link a:hover {
+    color: #999;
+}
+
+.opinions-intro {
+    font-style: italic;
+}
+
+.pitch {
+    margin-top: 15rem;
+    font-size: 8pt;
+}
+
+.pitch h3 {
+    font-size: 14pt;
+}
+
+.help {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+
+@media (max-width: 500px) {
+    .posts .post-intro, .posts .opinion-intro {
+        display: none;
+    }
+}

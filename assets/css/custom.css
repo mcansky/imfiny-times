@@ -1,0 +1,153 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.phones {
+  position: relative;
+}
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
+}
+
+.values {
+  background-image: url('../images/connectwork.png');
+  height: 18rem;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.values h3 {
+  z-index: 2;
+  //filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(100deg);
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(100deg);
+}
+.values p {
+  z-index: 2;
+  filter: sepia(0%) saturate(-200%) brightness(100%) hue-rotate(260deg);
+}
+
+.color-overlay {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(100deg);
+}
+
+.pitch p {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.bacon {
+  opacity: 0.1;
+}
+
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+.contact p {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.color-overlay p {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: none;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+}
+
+@media (max-width: 750px) {
+  .value-heading {
+    display: block;
+  }
+  .value-description {
+    display: none;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
